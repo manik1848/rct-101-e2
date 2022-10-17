@@ -1,82 +1,70 @@
-## Problem
+# Getting Started with Create React App
 
-- Create the following APP: [Products WebApp](https://glistening-licorice-ce9cdb.netlify.app/) using the Provided Boilerplate,
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-**_Note_**: Make sure you start `json-server` on `8080` port with provided `db.json` file, then only you will be able to see data on this website.
+## Available Scripts
 
-## [Video Explanation](https://masai-course.s3.ap-south-1.amazonaws.com/problem/rct-101/rct-101.e1.mp4)
+In the project directory, you can run:
 
-## Getting Started
+### `npm start`
 
-1. Fork this repository [https://github.com/riteshf/rct-101-e2.git](https://github.com/riteshf/rct-101-e2)
-2. Clone the Forked repository.
-   - **_Note_**: This Clone repository should be on your github account.
-3. navigate to the folder `cd rct-101-e2`
-4. npm install
-5. npm start
-6. Make sure your `json-server` is running on port `8080`, `db.json` file is provided.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-**_Note_**: Libraries are not installed, you need to install `axios` and `chakra-ui` yourself.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Understanding Component Structure
+### `npm test`
 
-- [App](./src/App.js)
-  - [Products](./src/components/Products.jsx)
-    - [AddProduct](./src/components/AddProduct.jsx)
-    - [Product](./src/components/Product.jsx) List
-    - [Pagination](./src/components/Pagination.jsx)
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-**Note** - `Make sure you use only the given components and dont create new files and folders. Changing component name, structures might result in giving you zero marks.`
+### `npm run build`
 
-## Understanding Data Structure
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- [db.json](./db.json)
-  - Initial Products should be fetched using json-server.
-  - Make sure json-server is running on port 8080.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-**Note** - `Make sure you use only the given data and dont create new data. Changing data might result in giving you zero marks`
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-## Features to build
+### `npm run eject`
 
-1. App should fetch `products` using axios as soon as Page Loads
-   - Default Page Limit is `3`, can be changed from `Pagination` Component.
-   - Default Page Number is `1`, changable from `Pagination` Component as per the button name.
-2. `Add New Product` Button
-   - When Clicked should load a `Modal` component.
-   - Modal should have similar fields as in the Deployed Website.
-   - Create Button should run validation for all fields, empty values should not be able to add.
-   - Create Button should call `POST` api to store product to `json-server`.
-     - You can hard-code Image URl.
-     - this should also add produt to the product list at the end.
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-## General Instructions (**_IMPORTANT_**)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Do not use Global CSS, instead use `<componentName>.module.css` convention for Css in that file.
-2. Do Not Remove `data-cy="xxxx"` from anywhere, this are used by testing tools to test your code, removal of this will lead to low score.
-3. Make sure you use only the given components and dont create new files and folders as chaging component name, structures might result in giving you zero marks
-4. Make sure you use only the given data and dont create new data, as chaging data might result in giving you zero marks.
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-## Knowledge Required
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-1. [React](https://reactjs.org/)
-   - useEffect
-   - useState
-   - useRef
-2. [axios](https://axios-http.com/)
-   - GET
-   - POST
-3. [Chakra-UI](https://chakra-ui.com/)
-   - Container
-   - Stack
-   - Button
-     - ButtonGroup
-   - Modal
-   - FormControl - FormLabel - Input
+## Learn More
 
-**Note** - This might not be all the things, you are free to use other components.
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-#### Submission
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- You need to Submit Github Link as well as netify link.
-- Make sure you use masai github account provided by MasaiSchool(submit link to root folder of your repository on github).
-- Make Sure you have netify account, else you will be getting zero marks as netify takes down your app in few days if your account does not exist.
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
