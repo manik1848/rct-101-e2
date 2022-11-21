@@ -4,6 +4,7 @@ import "./App.css";
 function App() {
   const [counter, setCounter] = useState(0);
   const id = useRef("");
+
   const [auth, setAuth] = useState(false);
 
   if (counter === 11) {
@@ -16,7 +17,7 @@ function App() {
     }
     id.current = setInterval(() => {
       setCounter((counter) => counter + 1);
-    }, 1000);
+    }, 500);
   };
   const handleStop = () => {
     if (counter <= 5) {
