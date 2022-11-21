@@ -17,7 +17,7 @@ function App() {
     }
     id.current = setInterval(() => {
       setCounter((counter) => counter + 1);
-    }, 500);
+    }, 1000);
   };
   const handleStop = () => {
     if (counter <= 5) {
